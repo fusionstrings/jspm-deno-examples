@@ -1,0 +1,14 @@
+{
+  "name": "jspm-deno-examples",
+  "version": "1.0.0",
+  "scripts": {
+    "generate-importmap-node": "node main-node.js",
+    "generate-importmap-deno": "deno run --import-map=./jspm.importmap --unstable --allow-net --allow-write ./main-deno.ts",
+    "test": "npm run generate-importmap-node && npm run generate-importmap-deno"
+  },
+  "devDependencies": {
+    "@jspm/generator": "^1.0.0-beta.11",
+    "typescript": "^4.3.5"
+  },
+  "type": "module"
+}
