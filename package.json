@@ -16,8 +16,5 @@
     "rollup": "^2.56.0",
     "typescript": "^4.3.5"
   },
-  "type": "module",
-  "dependencies": {
-    "react": "^17.0.2"
-  }
+  "type": "module"
 }

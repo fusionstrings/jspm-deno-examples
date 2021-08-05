@@ -9,8 +9,8 @@ const generator = new Generator( {
 });
 
 // Install a new package into the import map
-await generator.install({ target: './packages', subpath: './deps.js' });
-// await generator.install({ target: './packages', subpath: './app.jsx' });
+// await generator.install({ target: './packages', subpath: './deps.js' });
+await generator.install({ target: './packages', subpath: './app.jsx' });
 
 // // Install a package version and subpath into the import map (installs lit/decorators.js)
 // await generator.install('lit@2/decorators.js');
@@ -32,8 +32,8 @@ console.log(importmap);
 try {
   const controller = new AbortController();
   const { signal } = controller;
-  await writeFile('deps.node.importmap', importmap, { signal });
-//   await writeFile('app.node.importmap', importmap, { signal });
+//   await writeFile('deps.node.importmap', importmap, { signal });
+  await writeFile('app.node.importmap', importmap, { signal });
 } catch (err) {
   // When a request is aborted - err is an AbortError
   console.error(err);
