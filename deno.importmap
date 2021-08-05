@@ -1,1 +1,19 @@
-importmap
+{
+  "imports": {
+    "@jspm/generator": "https://ga.jspm.io/npm:@jspm/generator@1.0.0-beta.11/dist/generator.js"
+  },
+  "scopes": {
+    "https://ga.jspm.io/": {
+      "#fetch": "https://ga.jspm.io/npm:@jspm/generator@1.0.0-beta.11/dist/fetch-deno.js",
+      "@jspm/import-map": "https://ga.jspm.io/npm:@jspm/import-map@0.1.5/dist/map.js",
+      "buffer": "https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.8/nodelibs/deno/buffer.ts",
+      "es-module-lexer": "https://ga.jspm.io/npm:es-module-lexer@0.4.1/dist/lexer.cjs",
+      "fs": "https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.8/nodelibs/deno/fs.ts",
+      "process": "https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.8/nodelibs/deno/process.ts",
+      "semver": "https://ga.jspm.io/npm:semver@6.3.0/semver.js",
+      "sver": "https://ga.jspm.io/npm:sver@1.8.3/sver.js",
+      "sver/convert-range.js": "https://ga.jspm.io/npm:sver@1.8.3/convert-range.js",
+      "url": "https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.8/nodelibs/deno/url.ts"
+    }
+  }
+}

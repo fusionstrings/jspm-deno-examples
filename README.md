@@ -8,3 +8,7 @@
 
 ### Test
 - `npm install && npm run test`
+
+### Fix
+
+https://github.com/fusionstrings/importmaps/blob/creation/%40jspm/generator.importmap#L9

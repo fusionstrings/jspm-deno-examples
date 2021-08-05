@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "generate-importmap-node": "node main-node.js",
-    "generate-importmap-deno": "deno run --import-map=./jspm.importmap --unstable --allow-net --allow-write ./main-deno.ts",
+    "generate-importmap-deno": "deno run --import-map=./jspm.importmap --unstable --allow-net --allow-write --allow-env --allow-read ./main-deno.js",
+    "generate-importmap-deno-override": "deno run --import-map=https://raw.githubusercontent.com/fusionstrings/importmaps/v1.0.0-beta.11/@jspm/generator.importmap --unstable --allow-net --allow-write --allow-env --allow-read ./main-deno.js",
     "test": "npm run generate-importmap-node && npm run generate-importmap-deno"
   },
   "devDependencies": {
