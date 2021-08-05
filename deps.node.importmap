@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "jspm-deno-examples/deps.js": "./packages/deps.js"
+  },
+  "scopes": {
+    "./": {
+      "react": "https://ga.jspm.io/npm:react@17.0.2/index.js"
+    },
+    "https://ga.jspm.io/npm:react@17.0.2/": {
+      "object-assign": "https://ga.jspm.io/npm:object-assign@4.1.1/index.js"
+    }
+  }
+}
