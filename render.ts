@@ -36,7 +36,7 @@ async function handleRequest(request: Request) {
           ${importmapTag}
         </head>
         <body>
-          ${content || `${request.url}?md=<markdown file url>&css=<css file url>&js=<javascript url>&importmap=<importmap url>`}
+          ${content || `${request.url}?md=markdown-file-url&css=css-file-url&js=javascript-file-url&importmap=importmap-url`}
           ${scriptLink}
         </body>
       </html>`,
