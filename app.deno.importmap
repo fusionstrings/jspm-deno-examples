@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "jspm-deno-examples/app.jsx": "./packages/app.jsx"
+  }
+}
